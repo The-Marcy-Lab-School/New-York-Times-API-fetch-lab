@@ -14,9 +14,11 @@ Follow [these instructions](https://developer.nytimes.com/get-started). First, c
 
 You'll be given an API-key, which you will need to use as a query parameter in **ALL** your `fetch` requests to these APIs. Familize yourself with [all the APIs](https://developer.nytimes.com/apis) the New York Times has to offer!
 
+> As a best practice, you should not expose your API Key by pushing it to Github. I recommend creating a seperate .js file to store your API key as a JavaScript variable, adding a script tag to that file in your HTML, and then referencing that variable in your `index.js`. [Read about how to do that here](https://dev.to/ptprashanttripathi/how-to-hide-api-key-in-github-repo-2ik9).
+
 ## Build your Web App!
 
-Create the needed project files to build the web app that resembles the gif above. You can use `starter-code/index.html` as a starting point or copy the code chunks into your own components if you're building this lab in React. If you havn't learn React as a class, build this out using plain JavaScript. This lab uses Semantic UI for CSS, so you might see some css class names you don't recognize. That's ok! 
+Create the needed project files to build the web app that resembles the gif above. You can use `starter-code/index.html` as a starting point. This lab uses Semantic UI for CSS, so you might see some css class names you don't recognize. That's ok! 
 
 You should build out each of the following feature one at a time, coding a little and testing a little as you go.
 
