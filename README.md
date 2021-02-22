@@ -29,4 +29,12 @@ Below your Top Stories should be a form where the user can search for news artic
 > Make sure your fetch call has both the `api-key` and `q` query parameters. 
 > `GET https://api.nytimes.com/svc/search/v2/articlesearch.json?q={search}&api-key={key}`
 
+## Most Popular Stories
 
+New Yorks Times defined three ways to get the most popular stories: [Most Emailed](https://developer.nytimes.com/docs/most-popular-product/1/routes/emailed/%7Bperiod%7D.json/get), [Most Shared](https://developer.nytimes.com/docs/most-popular-product/1/routes/shared/%7Bperiod%7D.json/get), and [Most Viewed](https://developer.nytimes.com/docs/most-popular-product/1/routes/viewed/%7Bperiod%7D.json/get). Your web app should have a form that consists of a dropdown that has options: `Most Emailed, Most Shared, or Most Viewed`, another dropdown that has options for the period: `1 day, 7 days, or 30 days`, and a submit button. When the form is submitted, it will display the most 5 popular articles within that period. 
+
+> For example, submitting the form when the selected options are "Most Emailed" and "7 days" will make a request to `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json`. 
+
+## Build your own feature
+
+The New York Times APIs have so much data. Create your own feature, but it must be intuitive for your user to understand what the feature is and how to use it. 
