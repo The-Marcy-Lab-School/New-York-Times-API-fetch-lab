@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="ui huge message grid">
+        <h1 class="ui huge header">New York Times App</h1>
+    </div>
+
+    <!-- Top Stories -->
+    <div class="ui container segment">
+        <h1>Top Stories</h1>
+        <ul id="top-stories">
+            <!-- Your Top Stories should go here in this ul #top-stories -->
+        </ul>
+    </div>
+
+    <!-- Search Stories -->
+    <div class="ui container segment">
+        <h1>Search Stories</h1>
+        <form id="search-form" class="ui form">
+            <div class="field">
+              <label>Search Articles</label>
+              <input type="text" name="search" placeholder="Search Term">
+            </div>
+            <button class="ui button" type="submit">Search</button>
+        </form>
+        <ul id="search-results">
+            <!-- Your Search Results should go here in this ul #search-results -->
+        </ul>
+    </div>
+
+    <!-- Most Popular Stories -->
+    <div class="ui container segment">
+        <h1>Most Popular Stories</h1>
+        <form id="most-popular-form" class="ui form">
+            <label>Criteria</label>
+            <select class="ui dropdown">
+                <option value="most-emailed">Most Emailed</option>
+                <option value="most-shared">Most Shared</option>
+                <option value="most-viewed">Most Viewed</option>
+            </select>
+            <label>Period</label>
+            <select class="ui dropdown">
+                <option value="1">Past 1 day</option>
+                <option value="7">Past 7 days</option>
+                <option value="30">Past 30 days</option>
+            </select>
+            <button class="ui button" type="submit">Submit</button>
+        </form>
+        <ul id="most-popular-results">
+            <!-- Your Most Popular Stories should go here in this ul #most-popular-results -->
+        </ul>
+    </div>
+
+</body>
+</html>

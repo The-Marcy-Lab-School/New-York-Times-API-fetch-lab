@@ -16,7 +16,9 @@ You'll be given an API-key, which you will need to use as a query parameter in *
 
 ## Build your Web App!
 
-Create the needed files to build the web app that resembles the gif above. You should build out each of the following feature one at a time, coding a little and testing a little as you go.
+Create the needed project files to build the web app that resembles the gif above. You can use `starter-code/index.html` as a starting point or copy the code chunks into your own components if you're building this lab in React. If you havn't learn React as a class, build this out using plain JavaScript. This lab uses Semantic UI for CSS, so you might see some css class names you don't recognize. That's ok! 
+
+You should build out each of the following feature one at a time, coding a little and testing a little as you go.
 
 ## Top Stories
 
