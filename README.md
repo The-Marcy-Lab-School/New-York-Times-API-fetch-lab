@@ -2,9 +2,9 @@
 
 You will be using many [APIs from the New York Times](https://developer.nytimes.com/). 
 
-## DEMO
+## Demo
 
-Study out the gif below to get a fell for what you'll be building.
+Study the gif below to get a fell for what you'll be building.
 
 ## Create a Dev Account with NYT and get an API-Key
 
