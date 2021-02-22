@@ -12,7 +12,7 @@ Follow [these instructions](https://developer.nytimes.com/get-started). First, c
 
 [image]
 
-You'll be given an API-key, which you will need to use as a query parameter in **ALL** you `fetch` requests to these APIs. Familize yourself with [all the APIs](https://developer.nytimes.com/apis) the New York Times has to offer!
+You'll be given an API-key, which you will need to use as a query parameter in **ALL** your `fetch` requests to these APIs. Familize yourself with [all the APIs](https://developer.nytimes.com/apis) the New York Times has to offer!
 
 ## Build your Web App!
 
