@@ -24,14 +24,14 @@ When your web app loads, we should see a list of 5 **Top Stories** by the New Yo
 
 ## Search Stories
 
-Below your Top Stories should be a form where the user can search for news articles. Use the [Article Search API](https://developer.nytimes.com/docs/articlesearch-product/1/routes/articlesearch.json/get) You form only needs one text input and one submit button. When a user submits the form, your web app should display 10 article links that each open up a **new tab** to the articles directly from the the New York Times website. If the user makes another search by re-submitting the form, the previous search results should be "cleared out". 
+Below your Top Stories should be a form where the user can search for news articles. Use the [Article Search API](https://developer.nytimes.com/docs/articlesearch-product/1/routes/articlesearch.json/get). Your form only needs one text input and one submit button. When a user submits the form, your web app should display 10 article links that each open up a **new tab** to the articles directly from the the New York Times website. If the user makes another search by re-submitting the form, the previous search results should be "cleared out". 
 
 > Make sure your fetch call has both the `api-key` and `q` query parameters. 
-> `GET https://api.nytimes.com/svc/search/v2/articlesearch.json?q={search}&api-key={key}`
+> `GET https://api.nytimes.com/svc/search/v2/articlesearch.json?q={searchTerm}&api-key={key}`
 
 ## Most Popular Stories
 
-New Yorks Times defined three ways to get the most popular stories: [Most Emailed](https://developer.nytimes.com/docs/most-popular-product/1/routes/emailed/%7Bperiod%7D.json/get), [Most Shared](https://developer.nytimes.com/docs/most-popular-product/1/routes/shared/%7Bperiod%7D.json/get), and [Most Viewed](https://developer.nytimes.com/docs/most-popular-product/1/routes/viewed/%7Bperiod%7D.json/get). Your web app should have a form that consists of a dropdown that has options: `Most Emailed, Most Shared, or Most Viewed`, another dropdown that has options for the period: `1 day, 7 days, or 30 days`, and a submit button. When the form is submitted, it will display the most 5 popular articles within that period. 
+New York Times defines three ways to get the most popular stories: [Most Emailed](https://developer.nytimes.com/docs/most-popular-product/1/routes/emailed/%7Bperiod%7D.json/get), [Most Shared](https://developer.nytimes.com/docs/most-popular-product/1/routes/shared/%7Bperiod%7D.json/get), and [Most Viewed](https://developer.nytimes.com/docs/most-popular-product/1/routes/viewed/%7Bperiod%7D.json/get). Your web app should have a form that consists of a dropdown that has options: `Most Emailed, Most Shared, or Most Viewed`, another dropdown that has options for the period: `1 day, 7 days, or 30 days`, and a submit button. When the form is submitted, it will display the most 5 popular articles within that period. 
 
 > For example, submitting the form when the selected options are "Most Emailed" and "7 days" will make a request to `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json`. 
 
