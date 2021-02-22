@@ -35,6 +35,6 @@ New York Times defines three ways to get the most popular stories: [Most Emailed
 
 > For example, submitting the form when the selected options are "Most Emailed" and "7 days" will make a request to `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json`. 
 
-## Build your own feature
+## Build your own feature(s)
 
-The New York Times APIs have so much data. Create your own feature, but it must be intuitive for your user to understand what the feature is and how to use it. 
+The New York Times APIs have so much data. Create your own feature(s), but it must be intuitive for your user to understand what the feature is and how to use it. 
