@@ -23,7 +23,7 @@ You'll be given an API-key, which you will need to use as a query parameter in *
 
 ## Build your Web App!
 
-Create the needed project files to build the web app that resembles the gif above. You can use `starter-code/index.html` as a starting point or you can copy and paste the code into your own project files. This lab uses Semantic UI for CSS, so you might see some css class names you don't recognize. That's ok! 
+Create the needed project files to build the web app that resembles the gif above. You can use `starter-code/index.html` as a starting point or you can copy and paste the code into your own project files/components. This lab uses Semantic UI for CSS, so you might see some css class names you don't recognize. That's ok! 
 
 You should build out each of the following features one at a time, coding a little and testing a little as you go.
 
