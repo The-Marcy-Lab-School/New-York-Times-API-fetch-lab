@@ -10,7 +10,13 @@ Study the gif below to get a feel for what you'll be building.
 
 ## Create a Dev Account with NYT and get an API-Key
 
-Follow [these instructions](https://developer.nytimes.com/get-started). First, create an account and sign in. Then, register apps. The New York Times will assume you are a developer who plans on creating an app that uses their APIs. Since we are not making a _real_ application, and since we're just using these APIs for our lab, you can create a new app and call it "Marcy Lab Practice". Scroll down and make sure you click "Enable" for **all** the APIs. 
+Follow [these instructions](https://developer.nytimes.com/get-started). 
+* First, create an account and sign in. 
+* Then, select the drop down in the otp right corner and select "Apps". 
+* Click the "+ NEW APP" button.
+* The New York Times will assume you are a developer who plans on creating an app that uses their APIs. Since we are not making a _real_ application, and since we're just using these APIs for our lab, you can create give this an App Name of "Marcy Lab Practice". 
+* Scroll down and make sure you click "Enable" for **all** the APIs. 
+* Hit the SAVE button.
 
 ![api](./assets/apps.png)
 
@@ -29,33 +35,34 @@ You should build out each of the following features one at a time, coding a litt
 
 ## Feature 1: Top Stories
 
-When your web app loads, we should see a list of 5 **Top Stories** by the New York Times at the top of the page. These should be the same story titles as the [New York Times homepage](https://www.nytimes.com/). Use the [Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview) to get your data. Your lists of top stories in your web app should be links that will open up a **new tab** to the article directly from the New York Times website. 
+When your web app loads, we should see a list of 5 **Top Stories** by the New York Times at the top of the page. These should be the same story titles as the [New York Times homepage](https://www.nytimes.com/). Use the [Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview) to get your data. Your lists should be directy links to the articles.
+
+See below for an example of what your DOM should look like:
 
 ```html
-
+<ul id="top-stories">
+  <li><a href="https://www.nytimes.com/ukraine-russia-war...html">Ukraine Russia War</a></li>
+  <li><a href="https://www.nytimes.com/rihanna-superbowl...html">Rihanna Superbowl</a></li>
+  <li><a href="https://www.nytimes.com/railroad-crash...html">Railroad Crash</a></li>
+  <li><a href="https://www.nytimes.com/...html">Marcy Lab Make History</a></li>
+  <li><a href="https://www.nytimes.com/...html">Economy Improving</a></li>
+</ul>
 ```
 
 ![feature1](./assets/feature1.gif)
 
 ## Feature 2: Search Stories
 
-Below your Top Stories should be a form where the user can search for news articles. Use the [Article Search API](https://developer.nytimes.com/docs/articlesearch-product/1/routes/articlesearch.json/get). Your form only needs one text input and one submit button. When a user submits the form, your web app should display 10 article links that each open up a **new tab** to the articles directly from the the New York Times website. If the user makes another search by re-submitting the form, the previous search results should be "cleared out". 
-
-```html
-
-```
+Below your Top Stories is a form where the user can search for news articles. Use the [Article Search API](https://developer.nytimes.com/docs/articlesearch-product/1/routes/articlesearch.json/get). Your form only needs to handle one text input and one submit button. When a user submits the form, your web app should display 10 article links. If the user makes another search by re-submitting the form, the previous search results should be "cleared out" and you should see the new search results. 
 
 ![feature2](./assets/feature2.gif)
 
 ## Feature 3: Most Popular Stories
 
-New York Times defines three ways to get the most popular stories: [Most Emailed](https://developer.nytimes.com/docs/most-popular-product/1/routes/emailed/%7Bperiod%7D.json/get), [Most Shared](https://developer.nytimes.com/docs/most-popular-product/1/routes/shared/%7Bperiod%7D.json/get), and [Most Viewed](https://developer.nytimes.com/docs/most-popular-product/1/routes/viewed/%7Bperiod%7D.json/get). Your web app should have a form that consists of a dropdown that has options: `Most Emailed, Most Shared, or Most Viewed`, another dropdown that has options for the period: `Past 1 day, Past 7 days, or Past 30 days`, and a submit button. When the form is submitted, it will display the 3 most popular articles within that period. Clicking on an article link should again open up a **new tab** to that article's page. If the user makes another search by re-submitting the form, the previous search results should be "cleared out". 
+New York Times defines three ways to get the most popular stories: [Most Emailed](https://developer.nytimes.com/docs/most-popular-product/1/routes/emailed/%7Bperiod%7D.json/get), [Most Shared](https://developer.nytimes.com/docs/most-popular-product/1/routes/shared/%7Bperiod%7D.json/get), and [Most Viewed](https://developer.nytimes.com/docs/most-popular-product/1/routes/viewed/%7Bperiod%7D.json/get). Your web app should have a form that consists of a dropdown that has options: `Most Emailed, Most Shared, or Most Viewed`, another dropdown that has options for the period: `Past 1 day, Past 7 days, or Past 30 days`, and a submit button. When the form is submitted, it will display the 3 most popular article links within that period. If the user makes another search by re-submitting the form, the previous search results should be "cleared out". 
 
 ![feature3](./assets/feature3.gif)
 
-```html
-
-```
 
 > For example, submitting the form when the selected options are "Most Emailed" and "Past 7 days" will make a request to `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json`. 
 
