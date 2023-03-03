@@ -14,7 +14,7 @@ Follow [these instructions](https://developer.nytimes.com/get-started).
 * First, create an account and sign in. 
 * Then, select the drop down in the otp right corner and select "Apps". 
 * Click the "+ NEW APP" button.
-* The New York Times will assume you are a developer who plans on creating an app that uses their APIs. Since we are not making a _real_ application, and since we're just using these APIs for our lab, you can create give this an App Name of "Marcy Lab Practice". 
+* The New York Times will assume you are a developer who plans on creating an app that uses their APIs. Since we are not making a _real_ application, and since we're just using these APIs for our lab, you can give this an App Name of "Marcy Lab Practice". 
 * Scroll down and make sure you click "Enable" for **all** the APIs. 
 * Hit the SAVE button.
 
